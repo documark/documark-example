@@ -1,0 +1,11 @@
+mixin tocChapters(chapters, index)
+	if chapters && index < depth
+		ul(class='index-#{index}')
+			- each chapter in chapters 
+				//- if ! numberedOnly || chapter.title.match(/^\d/)
+				li
+					span.chapter-title= chapter.title
+					span.chapter-number= chapter.chapter
+					mixin tocChapters(chapter.subChapters, index + 1)
+
+mixin tocChapters(chapters, 0)

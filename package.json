@@ -1,0 +1,25 @@
+{
+  "name": "documark-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Documark example document.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauvm/documark-example.git"
+  },
+  "keywords": [
+    "documark",
+    "example"
+  ],
+  "author": "Maurits van Mastrigt <maurits@nerdieworks.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauvm/documark-example/issues"
+  },
+  "homepage": "https://github.com/mauvm/documark-example",
+  "devDependencies": {
+    "jade": "^1.9.1",
+    "stylus-renderer": "^1.1.0",
+    "xml2js": "^0.4.4"
+  }
+}

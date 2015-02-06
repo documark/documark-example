@@ -1,0 +1,60 @@
+---
+filename: Document.pdf
+title: Document
+subtitle: Subtitle of the Document
+author: Maurits van Mastrigt
+plugins:
+  - ./plugins/documark-plugin-loader
+debug: true
+---
+
+import documark-theme-default
+import documark-debug
+
+link(rel='stylesheet', type='text/css', href='assets/css/style.css')
+script(src='assets/js/zepto.min.js')
+script(src='assets/js/moment.min.js')
+script.
+	moment.locale('nl_NL');
+
+header
+	left Header left.
+	center Header center.
+	right Header right.
+
+footer
+	right Page [page-number] of [page-count]
+
+cover
+	h1= title
+	h2= subtitle
+	h2.author= author
+	h3.date
+	script.
+		$('cover h3.date').text(moment().format('D MMMM YYYY'));
+
+tableofcontents
+	h1.no-index Index
+
+chapter
+	include chapters/intro.jade
+
+	//- TODO(mauvm): Code beautifier
+	code(lang='php')
+		pre.
+			while ($eindbaas) {
+				beAwesome();
+			}
+
+//- page.landscape
+//- 	//- Empty header
+//- 	header
+//- 
+//- 	chapter
+//- 		include chapters/introduction.jade
+
+//- chapter
+//- 	include:markdown chapters/first-chapter.md
+
+chapter
+
