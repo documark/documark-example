@@ -1,5 +1,6 @@
 module.exports = function pageMeta ($, document, cb) {
 	var options   = document.config().pdf;
+	var cache     = document.helper('cache');
 	var $header   = $('header');
 	var hasHeader = ($header.length > 0);
 	var $footer   = $('footer');
@@ -13,12 +14,12 @@ module.exports = function pageMeta ($, document, cb) {
 	options.marginRight  = '12mm';
 
 	if (hasHeader) {
-		var headerFile = document.tempFileWriteStream('header.html');
+		var headerFile = cache.fileWriteStream('header.html');
 		headerFile.end($.html($header));
 		options.headerHtml = 'file://' + headerFile.path;
 	}
 	if (hasFooter) {
-		var footerFile = document.tempFileWriteStream('footer.html');
+		var footerFile = cache.fileWriteStream('footer.html');
 		footerFile.end($.html($footer));
 		options.footerHtml = 'file://' + footerFile.path;
 	}

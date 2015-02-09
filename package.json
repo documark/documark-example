@@ -21,5 +21,8 @@
     "jade": "^1.9.1",
     "stylus-renderer": "^1.1.0",
     "xml2js": "^0.4.4"
+  },
+  "dependencies": {
+    "sanitize-filename": "^1.1.3"
   }
 }

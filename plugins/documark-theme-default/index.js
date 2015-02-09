@@ -6,6 +6,8 @@ module.exports = function themeDefault ($, document, cb) {
 	var plugins = document.plugins();
 
 	// TODO(mauvm): Move to own package and remove ../
+	plugins.push(require('../documark-helpers'));
+	plugins.push(require('../documark-cache'));
 	plugins.push(require('../documark-page-meta'));
 	plugins.push(require('../documark-table-of-contents'));
 	plugins.push(require('../documark-relative-paths'));

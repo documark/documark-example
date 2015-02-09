@@ -1,8 +1,9 @@
 module.exports = function debug ($, document, cb) {
 	if (document.config().debug) {
 		document.once('post-compile', function () {
-			var file   = document.tempFileWriteStream('document.html');
-			var config = document.tempFileWriteStream('config.json');
+			var cache  = document.helper('cache');
+			var file   = cache.fileWriteStream('document.html');
+			var config = cache.fileWriteStream('config.json');
 
 			file.end($.html());
 			config.end(JSON.stringify(document.config(), null, 4));

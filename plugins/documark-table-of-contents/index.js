@@ -45,7 +45,7 @@ module.exports = function tableOfContents ($, document, cb) {
 	var hasTOC  = ($toc.length > 0);
 
 	if (hasTOC) {
-		var tocFilePath = document.tempFilePath('toc.xml');
+		var tocFilePath = document.helper('cache').filePath('toc.xml');
 
 		// TODO(mauvm): Compare index to current DOM and skip headers from cover/index or with .no-index
 		var html = jade.renderFile(path.join(__dirname, 'toc.jade'), {

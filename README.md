@@ -24,9 +24,8 @@ This example document shows multiple features of Documark.
 - [x] Header/footer
 - [x] Table of contents
 - [x] MomentJS
-- [ ] Create `documark-cache` helper
+- [x] Create `documark-cache` helper
 	- Remove temp file functions from Documark core
-	- Add helper functions to `document.lib.<function>`? Using `require('documark-helpers').<function>` won't do the trick because each plugin will have its own dependency packages.
 - [ ] Wrap pages in html, head, body with UTF-8 meta tag
 - [ ] Remove header/footer from cover
 - [ ] Exclude cover/index and .no-index headers from table of contents
