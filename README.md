@@ -26,11 +26,11 @@ This example document shows multiple features of Documark.
 - [x] MomentJS
 - [x] Create `documark-cache` helper
 	- Remove temp file functions from Documark core
-- [ ] Wrap pages in html, head, body with UTF-8 meta tag
+- [x] Wrap pages in html, head, body with UTF-8 meta tag
 - [ ] Remove header/footer from cover
 - [ ] Exclude cover/index and .no-index headers from table of contents
 - [ ] Update theme styling according to new elements
-- [ ] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
+- [x] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
 	- For cover?/header/footer
 	- `style` and `script` tag to --user-style-sheet's and global JS?
 	- Use `concat` package to merge `config.stylesheets` and `config.scripts` array on pre-compile!
