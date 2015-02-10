@@ -37,7 +37,7 @@ See [Example.pdf][example-pdf] for the final result!
 - [x] Find solution for styling/scripts accross multiple pages
 - [x] Add automatic chapter numbering
 - [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
-- [ ] MathJax support
+- [x] MathJax support
 - [ ] Include code from source file
 - [ ] Code snippets (inline, with highlighting)
 - [ ] Inline referencing (and references table)

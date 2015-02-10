@@ -1,0 +1,15 @@
+{
+  "name": "documark-math",
+  "version": "0.1.0",
+  "description": "Documark plugin for adding math formulas to your document.",
+  "main": "index.js",
+  "keywords": [
+    "documark",
+    "documark-plugin",
+    "math",
+    "mathjax"
+  ],
+  "repository": "https://github.com/mauvm/documark-math.git",
+  "author": "Maurits van Mastrigt <maurits@nerdieworks.nl>",
+  "license": "MIT"
+}
