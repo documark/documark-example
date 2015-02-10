@@ -17,6 +17,10 @@ This example document shows multiple features of Documark.
 
 4. Enjoy!
 
+## Preview
+
+See [Example.pdf][example-pdf] for the final result!
+
 ## To Do
 
 - [x] Default theme
@@ -30,28 +34,18 @@ This example document shows multiple features of Documark.
 - [x] Remove header/footer from cover
 - [x] Exclude cover/index and .no-index headers from table of contents
 - [x] Update theme styling according to new elements
-- [x] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
-	- For cover?/header/footer
-	- `style` and `script` tag to --user-style-sheet's and global JS?
-	- Use `concat` package to merge `config.stylesheets` and `config.scripts` array on pre-compile!
-	- Use the following flag to execute a script on every page:
-		
-		```bash
-		--run-script '(function(){var b=document.body,s=document.createElement("script");s.src="test.js";b.insertBefore(s,b.firstChild);})();'
-		```
-
-	- Add helper functions collection to Documark (through plugin(s)). For example: `document.addStylesheet('...');`
-
+- [x] Find solution for styling/scripts accross multiple pages
 - [x] Add automatic chapter numbering
+- [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
+- [ ] MathJax support
 - [ ] Include code from source file
 - [ ] Code snippets (inline, with highlighting)
-- [ ] MathJax support
 - [ ] Inline referencing (and references table)
 - [ ] Move plugins to seperate NPM packages
-- [ ] Scientific theme
-- [ ] Landscape pages
-- [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
+- [ ] Create scientific (LaTex like) theme
+- [ ] Landscape pages (really hard to do :( )
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://github.com/mauvm/documark
+[example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
