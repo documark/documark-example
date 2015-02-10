@@ -27,7 +27,7 @@ This example document shows multiple features of Documark.
 - [x] Create `documark-cache` helper
 	- Remove temp file functions from Documark core
 - [x] Wrap pages in html, head, body with UTF-8 meta tag
-- [ ] Remove header/footer from cover
+- [x] Remove header/footer from cover
 - [ ] Exclude cover/index and .no-index headers from table of contents
 - [x] Update theme styling according to new elements
 - [x] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
