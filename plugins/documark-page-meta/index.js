@@ -22,13 +22,19 @@ module.exports = function pageMeta ($, document, cb) {
 	// Add header/footer
 	if (hasHeader) {
 		var headerFile = cache.fileWriteStream('header.html');
-		headerFile.end(wrapper($.html($header)));
+		headerFile.end(wrapper({
+			body: $.html($header),
+			wrapperFile: path.join(__dirname, 'wrapper.jade')
+		}));
 		options.headerHtml = 'file://' + headerFile.path;
 		$header.remove();
 	}
 	if (hasFooter) {
 		var footerFile = cache.fileWriteStream('footer.html');
-		footerFile.end(wrapper($.html($footer)));
+		footerFile.end(wrapper({
+			body: $.html($footer),
+			wrapperFile: path.join(__dirname, 'wrapper.jade')
+		}));
 		options.footerHtml = 'file://' + footerFile.path;
 		$footer.remove();
 	}

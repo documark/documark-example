@@ -60,11 +60,13 @@ u, .underline
 	clear: both
 
 // HEADER / FOOTER
-header, footer
-	display: block
-	height: 60px
-	// background-color: red
-	& > table
+#meta
+	#wrapper
+		height: 50px
+	header, footer
+		display: block
+		width: 100%
+	footer
 		position: absolute
 		bottom: 0
 
@@ -122,28 +124,54 @@ chapter.prepend
 			right: 10px
 			font-size: 12px
 
-// INDEX
-index
+// TABLE OF CONTENTS
+tableofcontents
 	display: block
 	page-break-before: always
 	h1
 		padding: 20px 0 40px
 	li
-		span.page-title
+		span.chapter-title
 			display: inline-block
 			padding-bottom: 6px
-		span.page-number
+		span.chapter-number
 			float: right
-		&.first
-			padding-bottom: 18px
-			> span.page-title,
-			> span.page-number
-				font-weight: bold
+	ul.index-0 > li
+		padding-bottom: 18px
+		> span.chapter-title,
+		> span.chapter-number
+			font-weight: bold
+	ul.index-3
+		display: none
 
 // CHAPTER
 chapter
 	display: block
 	page-break-before: always
+
+// MISCELLANEOUS
+chapter
+	> h1
+		padding: 80px 0 20px
+
+// LINK
+chapter a
+	&, &:link, &:active
+		text-decoration: none
+		color: link-color
+	&:hover, &:visited
+		text-decoration: none
+		color: darken(link-color, 15%)
+
+// LIST
+chapter ul, chapter ol
+	margin: 20px 0 20px 25px
+	li
+		padding-bottom: 10px
+chapter ul
+	list-style: disc
+chapter ol
+	list-style: decimal
 
 // TABLE
 chapter table
@@ -171,38 +199,14 @@ chapter table
 		td:nth-child(1):nth-last-child(2)
 			width: 33%
 
-chapter.with-tables table tbody
-		td:nth-child(1):nth-last-child(3),
-		td:nth-child(2):nth-last-child(3)
-			width: 25%
-		td:nth-child(1):nth-last-child(n+4),
-		td:nth-child(2):nth-last-child(n+4)
-			width: 20%
+//chapter.with-tables table tbody
+//		td:nth-child(1):nth-last-child(3),
+//		td:nth-child(2):nth-last-child(3)
+//			width: 25%
+//		td:nth-child(1):nth-last-child(n+4),
+//		td:nth-child(2):nth-last-child(n+4)
+//			width: 20%
 	
-// LINK
-chapter a
-	&, &:link, &:active
-		text-decoration: none
-		color: link-color
-	&:hover, &:visited
-		text-decoration: none
-		color: darken(link-color, 15%)
-
-// LIST
-chapter ul, chapter ol
-	margin: 20px 0 20px 25px
-	li
-		padding-bottom: 10px
-chapter ul
-	list-style: disc
-chapter ol
-	list-style: decimal
-
-// MISCELLANEOUS
-chapter
-	> h1
-		padding: 80px 0 20px
-
 // CODE
 chapter
 	code

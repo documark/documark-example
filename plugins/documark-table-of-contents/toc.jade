@@ -5,7 +5,7 @@ mixin tocChapters(chapters, index)
 				//- if ! numberedOnly || chapter.title.match(/^\d/)
 				li
 					span.chapter-title= chapter.title
-					span.chapter-number= chapter.chapter
+					span.chapter-number= chapter.page
 					mixin tocChapters(chapter.subChapters, index + 1)
 
 mixin tocChapters(chapters, 0)

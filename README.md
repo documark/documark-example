@@ -29,7 +29,7 @@ This example document shows multiple features of Documark.
 - [x] Wrap pages in html, head, body with UTF-8 meta tag
 - [ ] Remove header/footer from cover
 - [ ] Exclude cover/index and .no-index headers from table of contents
-- [ ] Update theme styling according to new elements
+- [x] Update theme styling according to new elements
 - [x] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
 	- For cover?/header/footer
 	- `style` and `script` tag to --user-style-sheet's and global JS?

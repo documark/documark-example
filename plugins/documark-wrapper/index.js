@@ -1,13 +1,14 @@
-var path = require('path');
-var jade = require('jade');
+var path        = require('path');
+var jade        = require('jade');
+var wrapperFile = path.join(__dirname, 'wrapper.jade');
 
 module.exports = function wrapper ($, document, cb) {
 	var wrapper = document.helper('wrapper', function () {
-		return function (body) {
-			return jade.renderFile(
-				path.join(__dirname, 'wrapper.jade'),
-				{ body: body }
-			);
+		return function (data) {
+			if (typeof data !== 'object') {
+				data = { body: data };
+			}
+			return jade.renderFile(data.wrapperFile || wrapperFile, data);
 		};
 	});
 

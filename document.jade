@@ -18,12 +18,18 @@ script.
 	moment.locale('nl_NL');
 
 header
-	left Header left.
+	.pull-left Header left.
+	.pull-right Header right.
 	center Header center.
-	right Header right.
+	.clearfix
 
 footer
-	right Page [page-number] of [page-count]
+	.pull-left.section
+	.pull-right= 'Page '
+		span.page-number
+		= ' of '
+		span.page-count
+	.clearfix
 
 cover
 	h1= title
@@ -39,9 +45,9 @@ tableofcontents
 chapter
 	include chapters/intro.jade
 
-	//- TODO(mauvm): Code beautifier
-	code(lang='php')
-		pre.
+	//- TODO(mauvm): Code beautifier and only require code tag
+	pre
+		code(lang='php').
 			while ($eindbaas) {
 				beAwesome();
 			}
@@ -55,6 +61,3 @@ chapter
 
 //- chapter
 //- 	include:markdown chapters/first-chapter.md
-
-chapter
-
