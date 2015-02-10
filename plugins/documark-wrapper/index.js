@@ -12,9 +12,12 @@ module.exports = function wrapper ($, document, cb) {
 	});
 
 	// Wrap root document
-	var $container = $(wrapper(''));
-	var $children  = $.root().children().remove();
-	$.root().append($container.append($children));
+	if ($('body').length === 0) {
+		var $wrapper = $(wrapper(''));
+		var $items   = $.root().children();
+		$wrapper.find('body').append($items);
+		$.root().append($wrapper);
+	}
 
 	cb();
 };

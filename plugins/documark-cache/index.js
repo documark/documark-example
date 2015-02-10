@@ -3,20 +3,14 @@ var path     = require('path');
 var sanitize = require('sanitize-filename');
 
 module.exports = function cache ($, document, cb) {
-	document.helper('cache', function () {
+	var cache = document.helper('cache', function () {
 		return {
-			folderPath: function (create) {
-				var tempFolder = path.join(document.path(), '.documark');
-
-				if (create && ! fs.existsSync(tempFolder)) {
-					fs.mkdirSync(tempFolder, 0755);
-				}
-
-				return tempFolder;
+			folderPath: function () {
+				return path.join(document.path(), '.documark');
 			},
 
 			filePath: function (file) {
-				return path.join(this.folderPath(true), sanitize(file));
+				return path.join(this.folderPath(), sanitize(file));
 			},
 
 			fileReadStream: function (file) {
@@ -28,5 +22,13 @@ module.exports = function cache ($, document, cb) {
 			},
 		};
 	});
+
+	// Create cache folder
+	var cacheFolder = cache.folderPath();
+
+	if ( ! fs.existsSync(cacheFolder)) {
+		fs.mkdirSync(cacheFolder, 0755);
+	}
+
 	cb();
 };
