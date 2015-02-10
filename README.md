@@ -42,7 +42,8 @@ This example document shows multiple features of Documark.
 
 	- Add helper functions collection to Documark (through plugin(s)). For example: `document.addStylesheet('...');`
 
-- [ ] Add automatic page numbering
+- [x] Add automatic chapter numbering
+- [ ] Include code from source file
 - [ ] Code snippets (inline, with highlighting)
 - [ ] MathJax support
 - [ ] Inline referencing (and references table)

@@ -16,7 +16,7 @@ module.exports = function pageMeta ($, document, cb) {
 	options.pageSize     = 'A4';
 	options.marginTop    = (hasHeader ? '30mm' : '20mm');
 	options.marginBottom = (hasFooter ? '30mm' : '20mm');
-	options.marginLeft   = '30mm';
+	options.marginLeft   = '20mm';
 	options.marginRight  = '20mm';
 
 	// Add header/footer

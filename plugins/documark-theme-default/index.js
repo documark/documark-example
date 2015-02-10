@@ -12,6 +12,7 @@ module.exports = function themeDefault ($, document, cb) {
 	plugins.push(require('../documark-page-meta'));
 	plugins.push(require('../documark-table-of-contents'));
 	plugins.push(require('../documark-relative-paths'));
+	plugins.push(require('../documark-chapter-numbering'));
 	plugins.push(require('../documark-hr-to-page-break'));
 
 	// Add theme stylesheet
