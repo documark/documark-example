@@ -31,7 +31,7 @@ footer
 		span.page-count
 	.clearfix
 
-cover
+cover.no-index
 	h1= title
 	h2= subtitle
 	h2.author= author
@@ -39,8 +39,8 @@ cover
 	script.
 		$('cover h3.date').text(moment().format('D MMMM YYYY'));
 
-tableofcontents
-	h1.no-index Index
+tableofcontents.no-index
+	h1 Index
 
 chapter
 	include chapters/intro.jade

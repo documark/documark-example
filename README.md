@@ -28,7 +28,7 @@ This example document shows multiple features of Documark.
 	- Remove temp file functions from Documark core
 - [x] Wrap pages in html, head, body with UTF-8 meta tag
 - [x] Remove header/footer from cover
-- [ ] Exclude cover/index and .no-index headers from table of contents
+- [x] Exclude cover/index and .no-index headers from table of contents
 - [x] Update theme styling according to new elements
 - [x] Find solution for styling/scripts accross multiple pages (and cover?/header/footer)
 	- For cover?/header/footer
@@ -42,6 +42,7 @@ This example document shows multiple features of Documark.
 
 	- Add helper functions collection to Documark (through plugin(s)). For example: `document.addStylesheet('...');`
 
+- [ ] Add automatic page numbering
 - [ ] Code snippets (inline, with highlighting)
 - [ ] MathJax support
 - [ ] Inline referencing (and references table)

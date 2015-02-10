@@ -55,6 +55,7 @@ module.exports = function tableOfContents ($, document, cb) {
 
 		$toc.append(html);
 		options.dumpOutline = /*'file://' +*/ tocFilePath;
+		$.root().append('<script src="file://' + path.join(__dirname, 'remove-invalid-chapters.js') + '"/>');
 	}
 
 	cb();
