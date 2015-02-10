@@ -30,5 +30,8 @@ module.exports = function cache ($, document, cb) {
 		fs.mkdirSync(cacheFolder, 0755);
 	}
 
+	// Set WkHTMLToPDF cache dir
+	document.config().pdf.cacheDir = cacheFolder;
+
 	cb();
 };

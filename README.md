@@ -42,13 +42,13 @@ This example document shows multiple features of Documark.
 
 	- Add helper functions collection to Documark (through plugin(s)). For example: `document.addStylesheet('...');`
 
-- [ ] (Inline) code snippets (with highlighting)
+- [ ] Code snippets (inline, with highlighting)
 - [ ] MathJax support
 - [ ] Inline referencing (and references table)
 - [ ] Move plugins to seperate NPM packages
 - [ ] Scientific theme
 - [ ] Landscape pages
-- [ ] Set WkHTMLToPDF `--cache-dir` to `./.documark/cache`
+- [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
