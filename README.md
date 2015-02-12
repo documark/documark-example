@@ -4,9 +4,10 @@ This example document shows multiple features of Documark.
 
 ## Usage
 
-1. Make sure you have [NodeJS][nodejs] and [WkHTMLToPDF][wkhtmltopdf] installed.
-2. Install [Documark][documark]: `npm install documark -g`.
-3. Compile this document:
+1. Make sure you have [NodeJS][nodejs] and [WkHTMLToPDF][wkhtmltopdf] installed
+2. Install [Documark][documark]: `npm install documark -g`
+3. Run `npm install`
+4. Compile this document:
 
 	```bash
 	$ git clone https://github.com/mauvm/documark-example
@@ -15,7 +16,7 @@ This example document shows multiple features of Documark.
 	$ open Document.pdf # Mac OS X only
 	```
 
-4. Enjoy!
+5. Enjoy!
 
 ## Preview
 
