@@ -1,0 +1,68 @@
+<h1 id="documark-example">Documark example</h1>
+<p>This example document shows multiple features of Documark.</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Make sure you have <a href="http://nodejs.org/">NodeJS</a> and <a href="http://wkhtmltopdf.org/">WkHTMLToPDF</a> installed</li>
+<li>Install <a href="https://github.com/mauvm/documark">Documark</a>: <code>npm install documark -g</code></li>
+<li>Run <code>npm install</code></li>
+<li><p>Compile this document:</p>
+<pre><code class="lang-bash"> $ git clone https://github.com/mauvm/documark-example
+ $ cd documark-example
+ $ documark compile
+ $ open Document.pdf # Mac OS X only
+</code></pre>
+</li>
+<li><p>Enjoy!</p>
+</li>
+</ol>
+<h2 id="preview">Preview</h2>
+<p>See <a href="https://github.com/mauvm/documark-example/raw/master/Example.pdf">Example.pdf</a> for the final result!</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>These are the things you need to know in order to get started:</p>
+<ol>
+<li>The <code>document.jade</code> file is compiled, so define your structure in here. You can configure your document and include Jade/Markdown files in here.</li>
+<li><p>Assets are resolved from the directory where your <code>document.jade</code> file is in.</p>
+<p> This means that if you have an image in <code>./assets/img/kitteh.png</code> and want to add it in <code>./chapters/intro.md</code>, you can do this with <code>![Kitteh!](assets/img/kitteh.png)</code>.</p>
+</li>
+<li><p>Writing your own plugins is super easy:</p>
+<ol>
+<li>Create a file <code>plugins/documark-my-plugin/index.js</code></li>
+<li>Add <code>import my-plugin</code> to your <code>document.jade</code></li>
+<li><p>Use this template for your <code>index.js</code> file:</p>
+<pre><code class="lang-js">module.exports = function myPlugin ($, document, cb) {
+ // Do your thang!
+ cb();
+};
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<p>Good luck!</p>
+<h2 id="to-do">To Do</h2>
+<ul>
+<li>[x] Default theme</li>
+<li>[x] Cover</li>
+<li>[x] Header/footer</li>
+<li>[x] Table of contents</li>
+<li>[x] MomentJS</li>
+<li>[x] Create <code>documark-cache</code> helper<ul>
+<li>Remove temp file functions from Documark core</li>
+</ul>
+</li>
+<li>[x] Wrap pages in html, head, body with UTF-8 meta tag</li>
+<li>[x] Remove header/footer from cover</li>
+<li>[x] Exclude cover/index and .no-index headers from table of contents</li>
+<li>[x] Update theme styling according to new elements</li>
+<li>[x] Find solution for styling/scripts accross multiple pages</li>
+<li>[x] Add automatic chapter numbering</li>
+<li>[x] Set WkHTMLToPDF <code>--cache-dir</code> to <code>./.documark/</code></li>
+<li>[x] MathJax support</li>
+<li>[ ] Include code from source file</li>
+<li>[ ] Code snippets (inline, with highlighting)</li>
+<li>[ ] Inline referencing (and references table)</li>
+<li>[ ] Move plugins to seperate NPM packages</li>
+<li>[ ] Create scientific (LaTex like) theme</li>
+<li>[ ] Landscape pages (really hard to do :( )</li>
+</ul>
+
