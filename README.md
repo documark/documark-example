@@ -44,6 +44,8 @@ These are the things you need to know in order to get started:
 		};
 		```
 
+		Here the first param `$` is the [CheerioJS][cheeriojs] DOM tree (works a lot like jQuery) of the entire document, the `document` param is the [Documark][documark] instance, and finally the `cb` is the callback. Don't forget to call this and the end!
+
 Good luck and feedback is appreciated!
 
 ## To Do
@@ -74,3 +76,4 @@ Good luck and feedback is appreciated!
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://github.com/mauvm/documark
 [example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
+[cheeriojs]: https://github.com/cheeriojs/cheerio
