@@ -65,10 +65,10 @@ Good luck and feedback is appreciated!
 - [x] Add automatic chapter numbering
 - [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
 - [x] MathJax support
+- [x] Move plugins to separate NPM packages
 - [ ] Include code from source file
 - [ ] Code snippets (inline, with highlighting)
 - [ ] Inline referencing (and references table)
-- [ ] Move plugins to seperate NPM packages
 - [ ] Create scientific (LaTex like) theme
 - [ ] Landscape pages (really hard to do :( )
 

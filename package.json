@@ -7,22 +7,15 @@
     "type": "git",
     "url": "https://github.com/mauvm/documark-example.git"
   },
-  "keywords": [
-    "documark",
-    "example"
-  ],
   "author": "Maurits van Mastrigt <maurits@nerdieworks.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mauvm/documark-example/issues"
   },
   "homepage": "https://github.com/mauvm/documark-example",
-  "devDependencies": {
-    "jade": "^1.9.1",
-    "sanitize-filename": "^1.1.3",
-    "stylus": "^0.50.0",
-    "stylus-renderer": "^1.1.0",
-    "valid-url": "^1.0.9",
-    "xml2js": "^0.4.4"
+  "dependencies": {
+    "documark-theme-default": "~0.1.0",
+    "documark-math": "~0.1.0",
+    "documark-debug": "~0.2.0"
   }
 }
