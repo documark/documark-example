@@ -5,7 +5,7 @@ This example document shows multiple features of Documark.
 ## Usage
 
 1. Make sure you have [NodeJS][nodejs] and [WkHTMLToPDF][wkhtmltopdf] installed
-2. Install [Documark][documark]: `npm install documark -g`
+2. Install [Documark][documark]: `npm install -g documark-cli`
 3. Run `npm install`
 4. Compile this document:
 

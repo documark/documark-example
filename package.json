@@ -1,6 +1,5 @@
 {
   "name": "documark-example",
-  "version": "0.1.0",
   "private": true,
   "description": "Documark example document.",
   "repository": {
@@ -14,6 +13,7 @@
   },
   "homepage": "https://github.com/mauvm/documark-example",
   "dependencies": {
+    "documark": "~0.3.0",
     "documark-theme-default": "~0.1.0",
     "documark-math": "~0.1.0",
     "documark-debug": "~0.2.0"
