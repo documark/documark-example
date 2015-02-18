@@ -6,17 +6,20 @@ This example document shows multiple features of Documark.
 
 1. Make sure you have [NodeJS][nodejs] and [WkHTMLToPDF][wkhtmltopdf] installed
 2. Install [Documark][documark]: `npm install -g documark-cli`
-3. Run `npm install`
-4. Compile this document:
+3. Compile this document:
 
 	```bash
-	$ git clone https://github.com/mauvm/documark-example
-	$ cd documark-example
-	$ documark compile
-	$ open Document.pdf # Mac OS X only
+	git clone https://github.com/mauvm/documark-example
+	cd documark-example
+	npm install
+	documark compile
 	```
 
-5. Enjoy!
+4. Finally, open `Document.pdf` for the result!
+
+	```bash
+	open Document.pdf # Mac OS X only
+	```
 
 ## Preview
 
@@ -46,34 +49,22 @@ These are the things you need to know in order to get started:
 
 		Here the first param `$` is the [CheerioJS][cheeriojs] DOM tree (works a lot like jQuery) of the entire document, the `document` param is the [Documark][documark] instance, and finally the `cb` is the callback. Don't forget to call this and the end!
 
+Information about the build/compilation process can be [found here][build-process].
+
 Good luck and feedback is appreciated!
 
 ## To Do
 
-- [x] Default theme
-- [x] Cover
-- [x] Header/footer
-- [x] Table of contents
-- [x] MomentJS
-- [x] Create `documark-cache` helper
-	- Remove temp file functions from Documark core
-- [x] Wrap pages in html, head, body with UTF-8 meta tag
-- [x] Remove header/footer from cover
-- [x] Exclude cover/index and .no-index headers from table of contents
-- [x] Update theme styling according to new elements
-- [x] Find solution for styling/scripts accross multiple pages
-- [x] Add automatic chapter numbering
-- [x] Set WkHTMLToPDF `--cache-dir` to `./.documark/`
-- [x] MathJax support
-- [x] Move plugins to separate NPM packages
-- [ ] Include code from source file
+- [x] [Inline referencing (and references table)][dmp-references]
 - [ ] Code snippets (inline, with highlighting)
-- [ ] Inline referencing (and references table)
+- [ ] Include code from source file
 - [ ] Create scientific (LaTex like) theme
-- [ ] Landscape pages (really hard to do :( )
+- [ ] Landscape pages (really hard to do ◔̯◔)
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://github.com/mauvm/documark
 [example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
 [cheeriojs]: https://github.com/cheeriojs/cheerio
+[build-process]: https://github.com/mauvm/documark#build-process
+[dmp-references]: https://github.com/MalcolmK/dmp-references
