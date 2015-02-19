@@ -12,8 +12,9 @@ import documark-math
 import documark-debug
 
 link(rel='stylesheet', type='text/css', href='assets/css/style.css')
-script(src='assets/js/zepto.min.js')
-script(src='assets/js/moment.min.js')
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js')
 script.
 	moment.locale('nl_NL');
 
@@ -35,9 +36,12 @@ cover.no-index
 	h1= title
 	h2= subtitle
 	h2.author= author
+
 	h3.date
 	script.
+		// Dutch date
 		$('cover h3.date').text(moment().format('D MMMM YYYY'));
+
 	.footer
 		p Additional information..
 		p On the bottom..
