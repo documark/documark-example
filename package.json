@@ -14,7 +14,7 @@
   "homepage": "https://github.com/mauvm/documark-example",
   "dependencies": {
     "documark": "~0.4.1",
-    "documark-theme-default": "~0.1.1",
+    "documark-theme-default": "~0.1.5",
     "documark-math": "~0.1.0",
     "documark-debug": "~0.2.0"
   }
