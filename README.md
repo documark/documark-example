@@ -1,6 +1,6 @@
 # Documark example
 
-This example document shows multiple features of Documark.
+> This example document shows multiple features of Documark.
 
 ## Usage
 
@@ -47,7 +47,7 @@ Good luck and feedback is appreciated!
 
 ## Plugins
 
-Documark plugin packages start with `documark-` or `dmp-` (prefered prefix). Either way, all published plugins [can be found on NPM][documark-plugins].
+Documark plugin packages start with `dmp-` and [can be found on NPM][documark-plugins].
 
 ## Roadmap
 
@@ -63,7 +63,7 @@ Documark plugin packages start with `documark-` or `dmp-` (prefered prefix). Eit
 [example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
 [plugin-template]: https://github.com/mauvm/documark#plugin-development
 [build-process]: https://github.com/mauvm/documark#build-process
-[dmp-references]: https://github.com/MalcolmK/dmp-references
+[dmp-references]: https://www.npmjs.com/package/dmp-references
 [documark-example-issues]: https://github.com/mauvm/documark-example/issues
 [documark-plugins]: https://www.npmjs.com/browse/keyword/documark-plugin
 [latex-theme]: https://www.sharelatex.com/templates/thesis/norwegian-university-of-science-and-technology

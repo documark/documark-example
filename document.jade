@@ -4,12 +4,12 @@ title: Document
 subtitle: Subtitle of the Document
 author: Maurits van Mastrigt
 plugins:
-  - documark-theme-default
+  - dmp-theme-default
 debug: true
 ---
 
-import documark-math
-import documark-debug
+import dmp-math
+import dmp-debug
 
 link(rel='stylesheet', type='text/css', href='assets/css/style.css')
 
@@ -32,7 +32,7 @@ footer
 		span.page-count
 	.clearfix
 
-cover.no-index
+cover.no-index.no-number
 	h1= title
 	h2= subtitle
 	h2.author= author
@@ -47,7 +47,7 @@ cover.no-index
 		p On the bottom..
 		p Of the cover page.
 
-chapter.no-index
+chapter.no-index.no-number
 	h1 Index
 	table-of-contents(depth=2)
 
