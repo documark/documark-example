@@ -37,7 +37,7 @@ These are the things you need to know in order to get started:
 3. Writing your own plugins is super easy:
 
 	- Create a file `plugins/my-plugin/index.js`.
-	- Add `import my-plugin` to your `document.jade`.
+	- Add `plugin my-plugin` to your `document.jade`.
 	- Use [the plugin template][plugin-template] for your `index.js` file.
 
 Information about the build/compilation process can be [found here][build-process].
@@ -55,7 +55,7 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 - [ ] Code snippets (inline, with highlighting)
 - [ ] Include code from source file
 - [ ] Create scientific ([LaTex like][latex-theme]) theme
-- [ ] Landscape pages (really hard to do ◔̯◔)
+- [ ] Landscape pages ([not possible yet][wkhtmltopdf-page-options-issue] ◔̯◔)
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
@@ -67,3 +67,4 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 [documark-example-issues]: https://github.com/mauvm/documark-example/issues
 [documark-plugins]: https://www.npmjs.com/browse/keyword/documark-plugin
 [latex-theme]: https://www.sharelatex.com/templates/thesis/norwegian-university-of-science-and-technology
+[wkhtmltopdf-page-options-issue]: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2233
