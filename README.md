@@ -4,7 +4,7 @@
 
 ## Usage
 
-1. Make sure you have [NodeJS][nodejs] and [WkHTMLToPDF][wkhtmltopdf] installed.
+1. Make sure you have [NodeJS][nodejs] and [wkhtmltopdf][wkhtmltopdf] installed.
 2. Install [Documark][documark]: `npm install -g documark-cli`.
 3. Compile this document. In your command-line, run:
 
@@ -34,6 +34,8 @@ These are the things you need to know in order to get started:
 
 	This means that if you have an image in `./assets/img/kitteh.png` and want to add it in `./chapters/intro.md`, you can do this with `![KittyCat](assets/img/kitteh.png)` (instead of `../assets/img/kitteh.png`).
 
+	Also see the [`dmp-relative-paths` plugin][dmp-relative-paths].
+
 3. Writing your own plugins is super easy:
 
 	- Create a file `plugins/my-plugin/index.js`.
@@ -51,16 +53,17 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 
 ## Roadmap
 
-- [x] [Inline referencing (and references table)][dmp-references]
-- [ ] Code snippets (inline, with highlighting)
-- [ ] Include code from source file
-- [ ] Create scientific ([LaTex like][latex-theme]) theme
-- [ ] Landscape pages ([not possible yet][wkhtmltopdf-page-options-issue] ◔̯◔)
+- [x] [Inline referencing (and references table)][dmp-references].
+- [ ] Code snippets (inline, with highlighting).
+- [ ] Include code from source file.
+- [ ] Create scientific - [LaTex like][latex-theme] - theme.
+- [ ] Landscape pages ([not possible yet][wkhtmltopdf-page-options-issue] ◔̯◔).
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://github.com/mauvm/documark
 [example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
+[dmp-relative-paths]: https://www.npmjs.com/package/dmp-relative-paths
 [plugin-template]: https://github.com/mauvm/documark#plugin-development
 [build-process]: https://github.com/mauvm/documark#build-process
 [dmp-references]: https://www.npmjs.com/package/dmp-references
