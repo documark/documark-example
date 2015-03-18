@@ -9,7 +9,7 @@
 3. Compile this document. In your command-line, run:
 
 	```bash
-	git clone https://github.com/mauvm/documark-example
+	git clone https://github.com/documark/documark-example
 	cd documark-example
 	npm install
 	documark compile
@@ -61,13 +61,13 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
-[documark]: https://github.com/mauvm/documark
-[example-pdf]: https://github.com/mauvm/documark-example/raw/master/Example.pdf
+[documark]: https://www.npmjs.com/package/documark
+[example-pdf]: https://github.com/documark/documark-example/raw/master/Example.pdf
 [dmp-relative-paths]: https://www.npmjs.com/package/dmp-relative-paths
-[plugin-template]: https://github.com/mauvm/documark#plugin-development
-[build-process]: https://github.com/mauvm/documark#build-process
+[plugin-template]: https://github.com/documark/documark#plugin-development
+[build-process]: https://github.com/documark/documark#build-process
 [dmp-references]: https://www.npmjs.com/package/dmp-references
-[documark-example-issues]: https://github.com/mauvm/documark-example/issues
+[documark-example-issues]: https://github.com/documark/documark-example/issues
 [documark-plugins]: https://www.npmjs.com/browse/keyword/documark-plugin
 [latex-theme]: https://www.sharelatex.com/templates/thesis/norwegian-university-of-science-and-technology
 [wkhtmltopdf-page-options-issue]: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2233

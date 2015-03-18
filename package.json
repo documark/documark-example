@@ -4,14 +4,14 @@
   "description": "Documark example document.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mauvm/documark-example.git"
+    "url": "https://github.com/documark/documark-example.git"
   },
-  "author": "Maurits van Mastrigt <maurits@nerdieworks.nl>",
+  "author": "Documark Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mauvm/documark-example/issues"
+    "url": "https://github.com/documark/documark-example/issues"
   },
-  "homepage": "https://github.com/mauvm/documark-example",
+  "homepage": "https://github.com/documark/documark-example",
   "dependencies": {
     "documark": "~0.4.3",
     "dmp-theme-default": "~0.2.0",
