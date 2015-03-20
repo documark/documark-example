@@ -14,7 +14,7 @@
   "homepage": "https://github.com/documark/documark-example",
   "dependencies": {
     "documark": "~0.4.3",
-    "dmp-theme-default": "~0.2.0",
+    "dmp-theme-default": "~0.1.10",
     "dmp-math": "~0.1.3",
     "dmp-debug": "~0.2.3"
   }

@@ -51,14 +51,6 @@ Good luck and feedback is appreciated!
 
 Documark plugin packages start with `dmp-` and [can be found on NPM][documark-plugins].
 
-## Roadmap
-
-- [x] [Inline referencing (and references table)][dmp-references].
-- [ ] Code snippets (inline, with highlighting).
-- [ ] Include code from source file.
-- [ ] Create scientific - [LaTex like][latex-theme] - theme.
-- [ ] Landscape pages ([not possible yet][wkhtmltopdf-page-options-issue] ◔̯◔).
-
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://www.npmjs.com/package/documark
@@ -69,5 +61,3 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 [dmp-references]: https://www.npmjs.com/package/dmp-references
 [documark-example-issues]: https://github.com/documark/documark-example/issues
 [documark-plugins]: https://www.npmjs.com/browse/keyword/documark-plugin
-[latex-theme]: https://www.sharelatex.com/templates/thesis/norwegian-university-of-science-and-technology
-[wkhtmltopdf-page-options-issue]: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2233
