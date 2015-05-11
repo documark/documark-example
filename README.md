@@ -15,7 +15,7 @@
 	documark compile
 	```
 
-4. Finally, open `Document.pdf` for the result!
+4. Finally, open `Document.pdf` for the result:
 
 	```bash
 	open Document.pdf # in Mac OS X
@@ -54,7 +54,7 @@ Documark plugin packages start with `dmp-` and [can be found on NPM][documark-pl
 [nodejs]: http://nodejs.org/
 [wkhtmltopdf]: http://wkhtmltopdf.org/
 [documark]: https://www.npmjs.com/package/documark
-[example-pdf]: https://github.com/documark/documark-example/raw/master/Example.pdf
+[example-pdf]: https://github.com/documark/documark-example/blob/master/Example.pdf
 [dmp-relative-paths]: https://www.npmjs.com/package/dmp-relative-paths
 [plugin-template]: https://github.com/documark/documark#plugin-development
 [build-process]: https://github.com/documark/documark#build-process
